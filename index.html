@@ -1,288 +1,815 @@
 <!DOCTYPE html>
- <html lang="en">
-<head>
-    <link rel="canonical" href="https://gregory-ai.com/" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GregoryAI — find and filter relevant scientific research </title>
+<html lang="en">
+  <head>
+	<link rel="canonical" href="https://gregory-ai.com/" />
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>GregoryAI — find and filter relevant scientific research</title>
 
-    <!-- Meta SEO -->
-    <meta name="title" content="GregoryAI — find and filter relevant scientific research">
-    <meta name="description" content="">
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-    <meta name="author" content="Lisbon Collective">
+	<!-- Meta SEO -->
+	<meta
+	  name="title"
+	  content="GregoryAI — find and filter relevant scientific research"
+	/>
+	<meta name="description" content="" />
+	<meta name="robots" content="index, follow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="English" />
+	<meta name="author" content="Lisbon Collective" />
 
-    <!-- Social media share -->
-    <meta property="og:title" content="GregoryAI — find and filter relevant scientific research">
-    <meta property="og:site_name" content="GregoryAI">
-    <meta property="og:url" content="https://gregory-ai.com/">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="">
-    <meta property="og:image" content="https://gregory-ms.com/Gregory_Banner3.png">
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@gregoryMS_" />
-    <meta name="twitter:creator" content="@brunoamaral" />
+	<!-- Social media share -->
+	<meta
+	  property="og:title"
+	  content="GregoryAI — find and filter relevant scientific research"
+	/>
+	<meta property="og:site_name" content="GregoryAI" />
+	<meta property="og:url" content="https://gregory-ai.com/" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="" />
+	<meta
+	  property="og:image"
+	  content="https://gregory-ms.com/Gregory_Banner3.png"
+	/>
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@gregoryMS_" />
+	<meta name="twitter:creator" content="@brunoamaral" />
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link href="./output.css" rel="stylesheet">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-</head>
-<body>
-    <header class="fixed w-full">
-        <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
-            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                <a href="#" class="flex items-center">
-                    <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="GregoryAI Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">GregoryAI</span>
-                </a>
-                <div class="flex items-center lg:order-2">
-                    <div class="hidden mt-2 mr-4 sm:inline-block">
-                        <a class="github-button" href="https://github.com/brunoamaral/gregory" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star themesberg/landwind on GitHub">Star</a>
-                    </div>
-                    <!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
-                    <a href="https://github.com/brunoamaral/gregory/releases/latest" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
-                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    </button>
-                </div>
-                <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                    <!-- HIDDEN MENU! -->
-                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 hidden">
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Example Menu Item</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+	<link href="./output.css" rel="stylesheet" />
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+	<header class="fixed w-full">
+	  <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+		<div
+		  class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"
+		>
+		  <a href="#" class="flex items-center">
+			<img
+			  src="./images/logo.svg"
+			  class="h-6 mr-3 sm:h-9"
+			  alt="GregoryAI Logo"
+			/>
+			<span
+			  class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+			  >GregoryAI</span
+			>
+		  </a>
+		  <div class="flex items-center lg:order-2">
+			<div class="hidden mt-2 mr-4 sm:inline-block">
+			  <a
+				class="github-button"
+				href="https://github.com/brunoamaral/gregory"
+				data-size="large"
+				data-icon="octicon-star"
+				data-show-count="true"
+				aria-label="Star themesberg/landwind on GitHub"
+				>Star</a
+			  >
+			</div>
+			<!-- <a href="#" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> -->
+			<a
+			  href="https://github.com/brunoamaral/gregory/releases/latest"
+			  class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+			  >Download</a
+			>
+			<button
+			  data-collapse-toggle="mobile-menu-2"
+			  type="button"
+			  class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+			  aria-controls="mobile-menu-2"
+			  aria-expanded="false"
+			>
+			  <span class="sr-only">Open main menu</span>
+			  <svg
+				class="w-6 h-6"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+			  >
+				<path
+				  fill-rule="evenodd"
+				  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+				  clip-rule="evenodd"
+				></path>
+			  </svg>
+			  <svg
+				class="hidden w-6 h-6"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+			  >
+				<path
+				  fill-rule="evenodd"
+				  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+				  clip-rule="evenodd"
+				></path>
+			  </svg>
+			</button>
+		  </div>
+		  <div
+			class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1"
+			id="mobile-menu-2"
+		  >
+			<!-- HIDDEN MENU! -->
+			<ul
+			  class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 hidden"
+			>
+			  <li>
+				<a
+				  href="#"
+				  class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+				  aria-current="page"
+				  >Home</a
+				>
+			  </li>
+			  <li>
+				<a
+				  href="#"
+				  class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+				  >Example Menu Item</a
+				>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+	</header>
 
-    <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
-        <div class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">GregoryAI</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">Gregory is an Artificial Intelligence research assistant that constantly scouts trustworthy sources in any field, indexing and filtering the results into a searchable database.</p>
-                <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <a href="https://github.com/brunoamaral/gregory" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                        <svg class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> View on GitHub
-                    </a> 
-                </div>
-            </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="./images/gregory_full_body_hand_right.svg" style="height: 400px; width:auto;" alt="hero image">
-            </div>                
-        </div>
-    </section>
-    <!-- End block -->
-    
-<section class="bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-        <div class="items-center gap-8 lg:grid">
-        <div class=" grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
-        <div class="flex">
-            <div class="ml-6">
-                <h2 class="font-extrabold leading-6 text-slate-900 text-3xl">Cut through the noise</h2>
-                <p class="mt-2 text-sm leading-6 text-slate-700">
-                    Gregory fetches scientific papers in real time, and then uses Machine Learning and AI to parse what information is most relevant to your interests. Gregory saves your team hours of repetitive work, leaving them more time to dig deeper into research that matters.
-            </p>
-            </div>
-        </div>
-        <div class="flex">
-        <div class="ml-6">
-            <h2 class="font-extrabold leading-6 text-slate-900 text-3xl">Don’t miss key breakthroughs</h2><p class="mt-2 text-sm leading-6 text-slate-700">Customize Gregory to look for specific keywords to your research interest, and set up personalized email notifications to stay atop new exciting research on your field. Gregory also allows teams to adapt and segment emails for different stakeholder audiences, allowing for distinct information levels.
-            </p>
-        </div>
-        </div>
-        <div class="flex">
-        <div class="ml-6"><h2 class="font-extrabold leading-6 text-slate-900 text-3xl">Keep up with trends</h2><p class="mt-2 text-sm leading-6 text-slate-700">Gregory’s analytics dashboard allows teams to track in real time what research terms are becoming more popular. This way you’ll be able to track new treatments or information, and easily check what success rate other researchers have described — and how you can add work that is truly valuable.
-        </p></div>
-        </div>
-    </div>
-    </div>
-    </div>
-</section>
+	<!-- Start block -->
+	<section class="bg-white dark:bg-gray-900">
+	  <div
+		class="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28"
+	  >
+		<div class="mr-auto place-self-center lg:col-span-7">
+		  <h1
+			class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white"
+		  >
+			GregoryAI
+		  </h1>
+		  <p
+			class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+		  >
+			Gregory is an Artificial Intelligence research assistant that
+			constantly scouts trustworthy sources in any field, indexing and
+			filtering the results into a searchable database.
+		  </p>
+		  <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+			<a
+			  href="https://github.com/brunoamaral/gregory"
+			  target="_blank"
+			  class="inline-flex items-center justify-center w-full px-5 py-3 text-sm font-medium text-center text-gray-900 border border-gray-200 rounded-lg sm:w-auto hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+			>
+			  <svg
+				class="w-4 h-4 mr-2 text-gray-500 dark:text-gray-400"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 496 512"
+			  >
+				<!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+				<path
+				  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+				/>
+			  </svg>
+			  View on GitHub
+			</a>
+		  </div>
+		</div>
+		<div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+		  <img
+			src="./images/gregory_full_body_hand_right.svg"
+			style="height: 400px; width: auto;"
+			alt="hero image"
+		  />
+		</div>
+	  </div>
+	</section>
+	<!-- End block -->
 
-<section class="bg-white dark:bg-gray-900">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-    <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-        <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/undraw_alien_science_re_0f8q.svg" alt="feature image 2">
-        <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-        <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Features focused on scientific papers</h2>
-        <ul role="list" class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700">
-            <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Machine Learning prediction of relevant content</span>
-              </li>
-              <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Key takeaways extracted using Artificial Intelligence</span>
-              </li>
-              <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Configure RSS feeds to gather search results for any keyword</span>
-              </li>
-              <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Configure searches on any public website, not just medical publications</span>
-              </li>
-              <li class="flex space-x-3">
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Integrate with mailgun.com and set up automatic email notifications</span>
-              </li>
-              <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Manage and segment subscribers</span>
-              </li>
-              <li class="flex space-x-3">
-                <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Public and Private API</span>
-                </li>
-                <li class="flex space-x-3">
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Customize your own categories to get personalized search results</span>
-                </li>
-                <li class="flex space-x-3">
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Breakdown broader subjects into different segments</span>
-                </li>
-                <li class="flex space-x-3">
-                    <svg class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                <span class="text-base font-medium leading-tight text-gray-900 dark:text-white">Identify and subscribe to authors and their ORCID</span>
-                </li>
-            </ul>
-        </div>
-        </div>
-    </div>
-</section>
+	<section class="bg-gray-50 dark:bg-gray-800">
+	  <div
+		class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6"
+	  >
+		<div class="items-center gap-8 lg:grid">
+		  <div
+			class="grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
+		  >
+			<div class="flex">
+			  <div class="ml-6">
+				<h2 class="font-extrabold leading-6 text-slate-900 text-3xl">
+				  Cut through the noise
+				</h2>
+				<p class="mt-2 text-sm leading-6 text-slate-700">
+				  Gregory fetches scientific papers in real time, and then uses
+				  Machine Learning and AI to parse what information is most
+				  relevant to your interests. Gregory saves your team hours of
+				  repetitive work, leaving them more time to dig deeper into
+				  research that matters.
+				</p>
+			  </div>
+			</div>
+			<div class="flex">
+			  <div class="ml-6">
+				<h2 class="font-extrabold leading-6 text-slate-900 text-3xl">
+				  Don’t miss key breakthroughs
+				</h2>
+				<p class="mt-2 text-sm leading-6 text-slate-700">
+				  Customize Gregory to look for specific keywords to your
+				  research interest, and set up personalized email notifications
+				  to stay atop new exciting research on your field. Gregory also
+				  allows teams to adapt and segment emails for different
+				  stakeholder audiences, allowing for distinct information
+				  levels.
+				</p>
+			  </div>
+			</div>
+			<div class="flex">
+			  <div class="ml-6">
+				<h2 class="font-extrabold leading-6 text-slate-900 text-3xl">
+				  Keep up with trends
+				</h2>
+				<p class="mt-2 text-sm leading-6 text-slate-700">
+				  Gregory’s analytics dashboard allows teams to track in real
+				  time what research terms are becoming more popular. This way
+				  you’ll be able to track new treatments or information, and
+				  easily check what success rate other researchers have
+				  described — and how you can add work that is truly valuable.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
 
-<section class="bg-gray dark:bg-gray-900">
-    <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid">
-        <h2 class="max-w-2xl mb-4 text-xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-4xl dark:text-white">Use case for Multiple Sclerosis Research</h2>
-        <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0">
-            <div>
-                <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"></path></svg>
-                <h3 class="mb-2 text-2xl font-bold dark:text-white">Running since February 2021</h3>
-                <a href="https://gregory-ms.com/" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
-                    Multiple Sclerosis Research
-                    <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                </a>                              
-            </div>
-            <div>
-                <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
-                <h3 class="mb-2 text-2xl font-bold dark:text-white">85,000+ Identifed authors</h3>
-                <p class="font-light text-gray-500 dark:text-gray-400">Information is synced with ORCID</p>
-            </div>
-            <div>
-                <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path></svg>
-                <h3 class="mb-2 text-2xl font-bold dark:text-white">16,000+ papers</h3>
-                <p class="font-light text-gray-500 dark:text-gray-400">Synced with Crossref.org to ensure quality</p>
-            </div>
-            <div>
-                <svg class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
-                <h3 class="mb-2 text-2xl font-bold dark:text-white">330+ visitors per month</h3>
-                <p class="font-light text-gray-500 dark:text-gray-400">50≈ Daily Users</p>
-            </div>
-        </div>
-    </div>
-  </section>
+	<section class="bg-white dark:bg-gray-900">
+	  <div
+		class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6"
+	  >
+		<div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+		  <img
+			class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+			src="./images/undraw_alien_science_re_0f8q.svg"
+			alt="feature image 2"
+		  />
+		  <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+			<h2
+			  class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+			>
+			  Features focused on scientific papers
+			</h2>
+			<ul
+			  role="list"
+			  class="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
+			>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Machine Learning prediction of relevant content</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Key takeaways extracted using Artificial Intelligence</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Configure RSS feeds to gather search results for any
+				  keyword</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Configure searches on any public website, not just medical
+				  publications</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Integrate with mailgun.com and set up automatic email
+				  notifications</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Manage and segment subscribers</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Public and Private API</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Customize your own categories to get personalized search
+				  results</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Breakdown broader subjects into different segments</span
+				>
+			  </li>
+			  <li class="flex space-x-3">
+				<svg
+				  class="flex-shrink-0 w-5 h-5 text-purple-500 dark:text-purple-400"
+				  fill="currentColor"
+				  viewBox="0 0 20 20"
+				  xmlns="http://www.w3.org/2000/svg"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+					clip-rule="evenodd"
+				  ></path>
+				</svg>
+				<span
+				  class="text-base font-medium leading-tight text-gray-900 dark:text-white"
+				  >Identify and subscribe to authors and their ORCID</span
+				>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</section>
 
+	<section class="bg-gray dark:bg-gray-900">
+	  <div class="items-center max-w-screen-xl px-4 py-8 mx-auto lg:grid">
+		<h2
+		  class="max-w-2xl mb-4 text-xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-4xl dark:text-white"
+		>
+		  Gregory AI for Multiple Sclerosis Research
+		</h2>
+		<div
+		  class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0"
+		>
+		  <div>
+			<svg
+			  class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500"
+			  fill="currentColor"
+			  viewBox="0 0 20 20"
+			  xmlns="http://www.w3.org/2000/svg"
+			>
+			  <path
+				fill-rule="evenodd"
+				d="M2 5a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm14 1a1 1 0 11-2 0 1 1 0 012 0zM2 13a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H4a2 2 0 01-2-2v-2zm14 1a1 1 0 11-2 0 1 1 0 012 0z"
+				clip-rule="evenodd"
+			  ></path>
+			</svg>
+			<h3 class="mb-2 text-2xl font-bold dark:text-white">
+			  Running since February 2021
+			</h3>
+			<a
+			  href="https://gregory-ms.com/"
+			  target="_blank"
+			  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+			>
+			  Multiple Sclerosis Research
+			  <svg
+				class="w-5 h-5 ml-2"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+			  >
+				<path
+				  d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"
+				></path>
+				<path
+				  d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
+				></path>
+			  </svg>
+			</a>
+		  </div>
+		  <div>
+			<svg
+			  class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500"
+			  fill="currentColor"
+			  viewBox="0 0 20 20"
+			  xmlns="http://www.w3.org/2000/svg"
+			>
+			  <path
+				d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+			  ></path>
+			</svg>
+			<h3 class="mb-2 text-2xl font-bold dark:text-white">
+			  85,000+ Identifed authors
+			</h3>
+			<p class="font-light text-gray-500 dark:text-gray-400">
+			  Information is synced with ORCID
+			</p>
+		  </div>
+		  <div>
+			<svg
+			  class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500"
+			  fill="currentColor"
+			  viewBox="0 0 20 20"
+			  xmlns="http://www.w3.org/2000/svg"
+			>
+			  <path
+				fill-rule="evenodd"
+				d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z"
+				clip-rule="evenodd"
+			  ></path>
+			</svg>
+			<h3 class="mb-2 text-2xl font-bold dark:text-white">
+			  16,000+ papers
+			</h3>
+			<p class="font-light text-gray-500 dark:text-gray-400">
+			  Synced with Crossref.org to ensure quality
+			</p>
+		  </div>
+		  <div>
+			<svg
+			  class="w-10 h-10 mb-2 text-purple-600 md:w-12 md:h-12 dark:text-purple-500"
+			  fill="currentColor"
+			  viewBox="0 0 20 20"
+			  xmlns="http://www.w3.org/2000/svg"
+			>
+			  <path
+				d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+			  ></path>
+			</svg>
+			<h3 class="mb-2 text-2xl font-bold dark:text-white">
+			  330+ visitors per month
+			</h3>
+			<p class="font-light text-gray-500 dark:text-gray-400">
+			  50≈ Daily Users
+			</p>
+		  </div>
+		</div>
+	  </div>
+	</section>
 
+	<!-- Start block -->
+	<section class="bg-gray-50 dark:bg-gray-800">
+	  <div
+		class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6"
+	  >
+		<!-- Row -->
+		<div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+		  <div class="text-gray-500 sm:text-lg dark:text-gray-400">
+			<h2
+			  class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+			>
+			  The Team
+			</h2>
+			<p class="mb-8 font-light lg:text-xl">
+			  Gregory was started by
+			  <span class="font-bold">Bruno Amaral</span> upon his diagnosis and
+			  desire to keep up to date with research. The team grew when
+			  <span class="font-bold">António Lopes</span> and
+			  <span class="font-bold">Margarida Gomes</span> joined.
+			</p>
+		  </div>
+		  <img
+			class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+			src="./images/undraw_team_spirit_re_yl1v.svg"
+			alt="dashboard feature image"
+		  />
+		</div>
+		<!-- Row -->
+	  </div>
+	</section>
+	<section class="bg-white dark:bg-gray-900">
+	  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+		<h2
+		  class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
+		>
+		  Partners
+		</h2>
+		<p class="mb-8 font-light lg:text-xl max-w-lg mx-auto">
+		  GregoryAI is free to download and to use. Should you need any
+		  assistace to set up and configure, contact one of our partners.
+		</p>
 
-    <!-- Start block -->
-    <section class="bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
-            <!-- Row -->
-            <div class="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
-                <div class="text-gray-500 sm:text-lg dark:text-gray-400">
-                    <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">The Team</h2>
-                    <p class="mb-8 font-light lg:text-xl">Gregory was started by <span class="font-bold">Bruno Amaral</span> upon his diagnosis and desire to keep up to date with research. The team grew when <span class="font-bold">António Lopes</span> and <span class="font-bold">Margarida Gomes</span> joined.</p>
-
-                </div>
-                <img class="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex" src="./images/undraw_team_spirit_re_yl1v.svg" alt="dashboard feature image">
-            </div>
-            <!-- Row -->
-        </div>
-      </section>
-      <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-            <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">Partners</h2>
-            <p class="mb-8 font-light lg:text-xl  max-w-lg mx-auto">GregoryAI is free to download and to use. Should you need any assistace to set up and configure, contact one of our partners.</p>
-            
-<div class="grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1">
-    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="https://lisboncollective.com/" class="flex justify-center items-center">
-            <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.94 80.92"><defs><style>.cls-1{fill:#57cccf}</style></defs><g id="Lisbon_Collective" data-name="Lisbon Collective"><path class="cls-1" d="M68 39.88v1.85H51.61v-30H53.8v28.2z"></path><path class="cls-1" d="M75.29 41.73H73.1v-30h2.19z"></path><path class="cls-1" d="M98.76 15.33a.6.6.0 01-.55.36 1.21 1.21.0 01-.71-.39 10.09 10.09.0 00-1.18-.87 9.53 9.53.0 00-1.86-.88 8.09 8.09.0 00-2.75-.41 8.2 8.2.0 00-2.88.47 6.08 6.08.0 00-2.08 1.27 5.67 5.67.0 00-1.28 1.87A6 6 0 0085 19a4.57 4.57.0 00.65 2.53 5.77 5.77.0 001.71 1.7 11 11 0 002.41 1.18c.9.32 1.82.63 2.77.94s1.87.66 2.77 1a10.07 10.07.0 012.41 1.42 6.34 6.34.0 011.71 2.09 6.67 6.67.0 01.65 3.09 9.78 9.78.0 01-.65 3.56 8.39 8.39.0 01-1.88 2.9 8.73 8.73.0 01-3 1.94 11 11 0 01-4.08.71 11.55 11.55.0 01-5.12-1 12.07 12.07.0 01-3.76-2.88l.6-.93a.72.72.0 01.59-.32.84.84.0 01.49.25l.72.63a13 13 0 001 .81 8.21 8.21.0 001.38.8 9.54 9.54.0 004.12.89 8.85 8.85.0 003.19-.55 7.1 7.1.0 002.37-1.47A6.34 6.34.0 0097.57 36a7.42 7.42.0 00.51-2.75 4.82 4.82.0 00-.65-2.63 5.61 5.61.0 00-1.71-1.72 10.76 10.76.0 00-2.41-1.15c-.9-.31-1.82-.62-2.77-.92s-1.87-.63-2.77-1a9.45 9.45.0 01-2.41-1.42 6.43 6.43.0 01-1.71-2.14A7.15 7.15.0 0183 19.09a7.62 7.62.0 01.57-2.91 7.32 7.32.0 011.68-2.47A8.39 8.39.0 0188 12a10 10 0 013.71-.64 11.1 11.1.0 014.19.74 10.11 10.11.0 013.39 2.27z"></path><path class="cls-1" d="M115.54 11.68a17.26 17.26.0 014.46.51 8.55 8.55.0 013.12 1.49A6.15 6.15.0 01125 16.09a8.45 8.45.0 01.59 3.23 6.64 6.64.0 01-.41 2.3 7.26 7.26.0 01-1.19 2A7.59 7.59.0 01122 25.28a9.32 9.32.0 01-2.6 1 9.51 9.51.0 015.44 2.35 6.39 6.39.0 011.91 4.83A8.41 8.41.0 01126.1 37a7 7 0 01-2 2.59 9.06 9.06.0 01-3.19 1.63 15.22 15.22.0 01-4.29.56h-9.75v-30zm-6.46 1.72V25.74h6.5a10.68 10.68.0 003.56-.53 7 7 0 002.42-1.41 5.42 5.42.0 001.39-2 6 6 0 00.45-2.27 5.55 5.55.0 00-1.93-4.6c-1.28-1-3.25-1.56-5.93-1.56zM116.62 40q4 0 6-1.71a6 6 0 002-4.81 5.9 5.9.0 00-.54-2.56A5.29 5.29.0 00122.53 29 7.26 7.26.0 00120 27.76a12.06 12.06.0 00-3.38-.43h-7.56V40z"></path><path class="cls-1" d="M160.44 26.69a18.29 18.29.0 01-1 6.32 13.86 13.86.0 01-2.93 4.84A12.9 12.9.0 01151.93 41a16.11 16.11.0 01-11.65.0 13 13 0 01-4.52-3.11A13.86 13.86.0 01132.83 33a18.29 18.29.0 01-1-6.32 18.24 18.24.0 011-6.29 14 14 0 012.93-4.85 13.28 13.28.0 014.52-3.11 16 16 0 0111.65.0 12.9 12.9.0 014.54 3.11 14.13 14.13.0 012.93 4.86A18.24 18.24.0 01160.44 26.69zm-2.25.0a17.18 17.18.0 00-.87-5.65 11.92 11.92.0 00-2.47-4.24A10.52 10.52.0 00151 14.13a13.59 13.59.0 00-9.83.0 10.68 10.68.0 00-3.84 2.67A12.09 12.09.0 00134.88 21a16.92 16.92.0 00-.88 5.65 16.86 16.86.0 00.88 5.66 12.09 12.09.0 002.48 4.24 10.65 10.65.0 003.84 2.66 13.73 13.73.0 009.83.0 10.49 10.49.0 003.82-2.66 11.92 11.92.0 002.47-4.24A17.12 17.12.0 00158.19 26.69z"></path><path class="cls-1" d="M190.56 11.68V41.73h-1a1 1 0 01-.46-.09 1.19 1.19.0 01-.35-.33L169.21 15.22c0 .43.07.83.07 1.21v25.3h-1.92v-30h1.09a1.09 1.09.0 01.45.07 1 1 0 01.35.33l19.48 26c0-.43-.06-.83-.06-1.21V11.68z"></path><path d="M61.18 65.48a.31.31.0 01.22.09l.53.57a9.45 9.45.0 01-1.26 1.11 7.45 7.45.0 01-1.49.84 9.16 9.16.0 01-1.77.54 10.89 10.89.0 01-2.13.19 9 9 0 01-3.55-.68A7.89 7.89.0 0149 66.22a8.52 8.52.0 01-1.8-3 11.41 11.41.0 01-.64-3.93 10.82 10.82.0 01.66-3.86 8.9 8.9.0 011.84-3 8.19 8.19.0 012.84-2 9.47 9.47.0 013.66-.69A8.67 8.67.0 0161.6 52l-.41.6a.37.37.0 01-.33.15 1 1 0 01-.51-.29 7.22 7.22.0 00-1-.63 7.61 7.61.0 00-1.57-.64 7.52 7.52.0 00-2.26-.29 7.9 7.9.0 00-3.08.58A6.77 6.77.0 0050 53.17a7.54 7.54.0 00-1.57 2.64 10 10 0 00-.57 3.48 10.17 10.17.0 00.57 3.53A7.8 7.8.0 0050 65.45a6.86 6.86.0 002.37 1.64 7.52 7.52.0 002.94.57 10.61 10.61.0 001.78-.13 7.57 7.57.0 001.44-.39 6.55 6.55.0 001.23-.65 8.83 8.83.0 001.11-.89.55.55.0 01.14-.09A.28.28.0 0161.18 65.48z"></path><path d="M81.76 59.29a11.31 11.31.0 01-.65 3.92 8.69 8.69.0 01-1.81 3 8 8 0 01-2.81 1.92 9.92 9.92.0 01-7.22.0 8 8 0 01-2.8-1.92 8.71 8.71.0 01-1.82-3 12.26 12.26.0 010-7.82 8.71 8.71.0 011.82-3 8.11 8.11.0 012.8-1.93 9.92 9.92.0 017.22.0 7.89 7.89.0 012.81 1.93 8.69 8.69.0 011.81 3A11.23 11.23.0 0181.76 59.29zm-1.4.0a10.67 10.67.0 00-.54-3.5 7.49 7.49.0 00-1.52-2.63 6.58 6.58.0 00-2.37-1.65 8.42 8.42.0 00-6.09.0 6.53 6.53.0 00-2.38 1.65 7.68 7.68.0 00-1.54 2.63 11.65 11.65.0 000 7 7.68 7.68.0 001.54 2.63 6.51 6.51.0 002.38 1.64 8.42 8.42.0 006.09.0 6.56 6.56.0 002.37-1.64 7.49 7.49.0 001.52-2.63A10.6 10.6.0 0080.36 59.29z"></path><path d="M96.22 67.47v1.14H86.05V50H87.4V67.47z"></path><path d="M109.54 67.47v1.14H99.37V50h1.35V67.47z"></path><path d="M123.87 67.49v1.12H112.68V50h11.16v1.12H114v7.53h8.16v1.09H114v7.76z"></path><path d="M141 65.48a.32.32.0 01.23.09l.52.57a8.78 8.78.0 01-1.25 1.11 7.74 7.74.0 01-1.49.84 9.05 9.05.0 01-1.78.54 10.71 10.71.0 01-2.12.19 8.92 8.92.0 01-3.55-.68 7.93 7.93.0 01-2.77-1.92 8.83 8.83.0 01-1.8-3 11.65 11.65.0 01-.63-3.93 11 11 0 01.65-3.86 8.92 8.92.0 011.85-3 8.09 8.09.0 012.84-2 9.4 9.4.0 013.66-.69A8.62 8.62.0 01141.38 52l-.41.6a.36.36.0 01-.32.15 1 1 0 01-.52-.29 6.47 6.47.0 00-1-.63 8 8 0 00-1.58-.64 7.45 7.45.0 00-2.25-.29 7.91 7.91.0 00-3.09.58 6.86 6.86.0 00-2.41 1.65 7.69 7.69.0 00-1.57 2.64 10 10 0 00-.57 3.48 10.17 10.17.0 00.58 3.53 7.64 7.64.0 001.57 2.63 6.82 6.82.0 002.36 1.64 7.55 7.55.0 002.94.57 10.73 10.73.0 001.79-.13 7.57 7.57.0 001.44-.39 6.46 6.46.0 001.22-.65 8.9 8.9.0 001.12-.89.51.51.0 01.13-.09z"></path><path d="M157.42 51.14h-6.54V68.61h-1.35V51.14H143V50h14.47z"></path><path d="M161.91 68.61h-1.36V50h1.36z"></path><path d="M181.57 50l-7.68 18.62h-1.2L165 50h1.07a.44.44.0 01.3.1.55.55.0 01.18.26l6.35 15.44c.07.2.14.4.21.62s.13.45.2.67c.05-.22.11-.45.17-.67a5.64 5.64.0 01.21-.62L180 50.35a.49.49.0 01.18-.25.5.5.0 01.32-.11z"></path><path d="M195.85 67.49v1.12H184.66V50h11.16v1.12H186v7.53h8.16v1.09H186v7.76z"></path></g></svg>                      
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Consultancy studio based in Lisbon and main supporter of the project.</p>
-        <a href="https://lisboncollective.com/" target="_blank" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">
-            Website
-            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-    </div>
-    
-</div>
-              
-        </div>
-    </section>
-    <!-- End block -->
-    <footer class="bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
-            <div class="grid grid-cols-1">
-                <div class="mx-auto">
-                    <h3 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h3>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="https://med-mastodon.com/@gregoryMS#" class="hover:underline">Mastodon Server</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://twitter.com/gregoryms_" class="hover:underline">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/brunoamaral/gregory/blob/main/LICENSE" class="hover">CC0 License</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-            <div class="text-center">
-                <a href="#" class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white">
-                    <img src="./images/logo.svg" class="h-6 mr-3 sm:h-9" alt="GregoryAI Logo" />
-                    GregoryAI    
-                </a>
-                <span class="block text-sm text-center text-gray-500 dark:text-gray-400">Theme © 2021-2022 Landwind™. All Rights Reserved. Built with <a href="https://flowbite.com" class="text-purple-600 hover:underline dark:text-purple-500">Flowbite</a> and <a href="https://tailwindcss.com" class="text-purple-600 hover:underline dark:text-purple-500">Tailwind CSS</a>.
-                </span>
-                <ul class="flex justify-center mt-5 space-x-5">
-                    
-                    <li>
-                        <a href="https://twitter.com/gregoryMS_" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/brunoamaral/gregory" class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
-</body>
+		<div class="grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1">
+		  <div
+			class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+		  >
+			<a
+			  href="https://lisboncollective.com/"
+			  class="flex justify-center items-center"
+			>
+			  <svg
+				class=""
+				width="100%"
+				height="100%"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 240.94 80.92"
+			  >
+				<defs>
+				  <style>
+					.cls-1 {
+					  fill: #57cccf;
+					}
+				  </style>
+				</defs>
+				<g id="Lisbon_Collective" data-name="Lisbon Collective">
+				  <path
+					class="cls-1"
+					d="M68 39.88v1.85H51.61v-30H53.8v28.2z"
+				  ></path>
+				  <path class="cls-1" d="M75.29 41.73H73.1v-30h2.19z"></path>
+				  <path
+					class="cls-1"
+					d="M98.76 15.33a.6.6.0 01-.55.36 1.21 1.21.0 01-.71-.39 10.09 10.09.0 00-1.18-.87 9.53 9.53.0 00-1.86-.88 8.09 8.09.0 00-2.75-.41 8.2 8.2.0 00-2.88.47 6.08 6.08.0 00-2.08 1.27 5.67 5.67.0 00-1.28 1.87A6 6 0 0085 19a4.57 4.57.0 00.65 2.53 5.77 5.77.0 001.71 1.7 11 11 0 002.41 1.18c.9.32 1.82.63 2.77.94s1.87.66 2.77 1a10.07 10.07.0 012.41 1.42 6.34 6.34.0 011.71 2.09 6.67 6.67.0 01.65 3.09 9.78 9.78.0 01-.65 3.56 8.39 8.39.0 01-1.88 2.9 8.73 8.73.0 01-3 1.94 11 11 0 01-4.08.71 11.55 11.55.0 01-5.12-1 12.07 12.07.0 01-3.76-2.88l.6-.93a.72.72.0 01.59-.32.84.84.0 01.49.25l.72.63a13 13 0 001 .81 8.21 8.21.0 001.38.8 9.54 9.54.0 004.12.89 8.85 8.85.0 003.19-.55 7.1 7.1.0 002.37-1.47A6.34 6.34.0 0097.57 36a7.42 7.42.0 00.51-2.75 4.82 4.82.0 00-.65-2.63 5.61 5.61.0 00-1.71-1.72 10.76 10.76.0 00-2.41-1.15c-.9-.31-1.82-.62-2.77-.92s-1.87-.63-2.77-1a9.45 9.45.0 01-2.41-1.42 6.43 6.43.0 01-1.71-2.14A7.15 7.15.0 0183 19.09a7.62 7.62.0 01.57-2.91 7.32 7.32.0 011.68-2.47A8.39 8.39.0 0188 12a10 10 0 013.71-.64 11.1 11.1.0 014.19.74 10.11 10.11.0 013.39 2.27z"
+				  ></path>
+				  <path
+					class="cls-1"
+					d="M115.54 11.68a17.26 17.26.0 014.46.51 8.55 8.55.0 013.12 1.49A6.15 6.15.0 01125 16.09a8.45 8.45.0 01.59 3.23 6.64 6.64.0 01-.41 2.3 7.26 7.26.0 01-1.19 2A7.59 7.59.0 01122 25.28a9.32 9.32.0 01-2.6 1 9.51 9.51.0 015.44 2.35 6.39 6.39.0 011.91 4.83A8.41 8.41.0 01126.1 37a7 7 0 01-2 2.59 9.06 9.06.0 01-3.19 1.63 15.22 15.22.0 01-4.29.56h-9.75v-30zm-6.46 1.72V25.74h6.5a10.68 10.68.0 003.56-.53 7 7 0 002.42-1.41 5.42 5.42.0 001.39-2 6 6 0 00.45-2.27 5.55 5.55.0 00-1.93-4.6c-1.28-1-3.25-1.56-5.93-1.56zM116.62 40q4 0 6-1.71a6 6 0 002-4.81 5.9 5.9.0 00-.54-2.56A5.29 5.29.0 00122.53 29 7.26 7.26.0 00120 27.76a12.06 12.06.0 00-3.38-.43h-7.56V40z"
+				  ></path>
+				  <path
+					class="cls-1"
+					d="M160.44 26.69a18.29 18.29.0 01-1 6.32 13.86 13.86.0 01-2.93 4.84A12.9 12.9.0 01151.93 41a16.11 16.11.0 01-11.65.0 13 13 0 01-4.52-3.11A13.86 13.86.0 01132.83 33a18.29 18.29.0 01-1-6.32 18.24 18.24.0 011-6.29 14 14 0 012.93-4.85 13.28 13.28.0 014.52-3.11 16 16 0 0111.65.0 12.9 12.9.0 014.54 3.11 14.13 14.13.0 012.93 4.86A18.24 18.24.0 01160.44 26.69zm-2.25.0a17.18 17.18.0 00-.87-5.65 11.92 11.92.0 00-2.47-4.24A10.52 10.52.0 00151 14.13a13.59 13.59.0 00-9.83.0 10.68 10.68.0 00-3.84 2.67A12.09 12.09.0 00134.88 21a16.92 16.92.0 00-.88 5.65 16.86 16.86.0 00.88 5.66 12.09 12.09.0 002.48 4.24 10.65 10.65.0 003.84 2.66 13.73 13.73.0 009.83.0 10.49 10.49.0 003.82-2.66 11.92 11.92.0 002.47-4.24A17.12 17.12.0 00158.19 26.69z"
+				  ></path>
+				  <path
+					class="cls-1"
+					d="M190.56 11.68V41.73h-1a1 1 0 01-.46-.09 1.19 1.19.0 01-.35-.33L169.21 15.22c0 .43.07.83.07 1.21v25.3h-1.92v-30h1.09a1.09 1.09.0 01.45.07 1 1 0 01.35.33l19.48 26c0-.43-.06-.83-.06-1.21V11.68z"
+				  ></path>
+				  <path
+					d="M61.18 65.48a.31.31.0 01.22.09l.53.57a9.45 9.45.0 01-1.26 1.11 7.45 7.45.0 01-1.49.84 9.16 9.16.0 01-1.77.54 10.89 10.89.0 01-2.13.19 9 9 0 01-3.55-.68A7.89 7.89.0 0149 66.22a8.52 8.52.0 01-1.8-3 11.41 11.41.0 01-.64-3.93 10.82 10.82.0 01.66-3.86 8.9 8.9.0 011.84-3 8.19 8.19.0 012.84-2 9.47 9.47.0 013.66-.69A8.67 8.67.0 0161.6 52l-.41.6a.37.37.0 01-.33.15 1 1 0 01-.51-.29 7.22 7.22.0 00-1-.63 7.61 7.61.0 00-1.57-.64 7.52 7.52.0 00-2.26-.29 7.9 7.9.0 00-3.08.58A6.77 6.77.0 0050 53.17a7.54 7.54.0 00-1.57 2.64 10 10 0 00-.57 3.48 10.17 10.17.0 00.57 3.53A7.8 7.8.0 0050 65.45a6.86 6.86.0 002.37 1.64 7.52 7.52.0 002.94.57 10.61 10.61.0 001.78-.13 7.57 7.57.0 001.44-.39 6.55 6.55.0 001.23-.65 8.83 8.83.0 001.11-.89.55.55.0 01.14-.09A.28.28.0 0161.18 65.48z"
+				  ></path>
+				  <path
+					d="M81.76 59.29a11.31 11.31.0 01-.65 3.92 8.69 8.69.0 01-1.81 3 8 8 0 01-2.81 1.92 9.92 9.92.0 01-7.22.0 8 8 0 01-2.8-1.92 8.71 8.71.0 01-1.82-3 12.26 12.26.0 010-7.82 8.71 8.71.0 011.82-3 8.11 8.11.0 012.8-1.93 9.92 9.92.0 017.22.0 7.89 7.89.0 012.81 1.93 8.69 8.69.0 011.81 3A11.23 11.23.0 0181.76 59.29zm-1.4.0a10.67 10.67.0 00-.54-3.5 7.49 7.49.0 00-1.52-2.63 6.58 6.58.0 00-2.37-1.65 8.42 8.42.0 00-6.09.0 6.53 6.53.0 00-2.38 1.65 7.68 7.68.0 00-1.54 2.63 11.65 11.65.0 000 7 7.68 7.68.0 001.54 2.63 6.51 6.51.0 002.38 1.64 8.42 8.42.0 006.09.0 6.56 6.56.0 002.37-1.64 7.49 7.49.0 001.52-2.63A10.6 10.6.0 0080.36 59.29z"
+				  ></path>
+				  <path d="M96.22 67.47v1.14H86.05V50H87.4V67.47z"></path>
+				  <path d="M109.54 67.47v1.14H99.37V50h1.35V67.47z"></path>
+				  <path
+					d="M123.87 67.49v1.12H112.68V50h11.16v1.12H114v7.53h8.16v1.09H114v7.76z"
+				  ></path>
+				  <path
+					d="M141 65.48a.32.32.0 01.23.09l.52.57a8.78 8.78.0 01-1.25 1.11 7.74 7.74.0 01-1.49.84 9.05 9.05.0 01-1.78.54 10.71 10.71.0 01-2.12.19 8.92 8.92.0 01-3.55-.68 7.93 7.93.0 01-2.77-1.92 8.83 8.83.0 01-1.8-3 11.65 11.65.0 01-.63-3.93 11 11 0 01.65-3.86 8.92 8.92.0 011.85-3 8.09 8.09.0 012.84-2 9.4 9.4.0 013.66-.69A8.62 8.62.0 01141.38 52l-.41.6a.36.36.0 01-.32.15 1 1 0 01-.52-.29 6.47 6.47.0 00-1-.63 8 8 0 00-1.58-.64 7.45 7.45.0 00-2.25-.29 7.91 7.91.0 00-3.09.58 6.86 6.86.0 00-2.41 1.65 7.69 7.69.0 00-1.57 2.64 10 10 0 00-.57 3.48 10.17 10.17.0 00.58 3.53 7.64 7.64.0 001.57 2.63 6.82 6.82.0 002.36 1.64 7.55 7.55.0 002.94.57 10.73 10.73.0 001.79-.13 7.57 7.57.0 001.44-.39 6.46 6.46.0 001.22-.65 8.9 8.9.0 001.12-.89.51.51.0 01.13-.09z"
+				  ></path>
+				  <path
+					d="M157.42 51.14h-6.54V68.61h-1.35V51.14H143V50h14.47z"
+				  ></path>
+				  <path d="M161.91 68.61h-1.36V50h1.36z"></path>
+				  <path
+					d="M181.57 50l-7.68 18.62h-1.2L165 50h1.07a.44.44.0 01.3.1.55.55.0 01.18.26l6.35 15.44c.07.2.14.4.21.62s.13.45.2.67c.05-.22.11-.45.17-.67a5.64 5.64.0 01.21-.62L180 50.35a.49.49.0 01.18-.25.5.5.0 01.32-.11z"
+				  ></path>
+				  <path
+					d="M195.85 67.49v1.12H184.66V50h11.16v1.12H186v7.53h8.16v1.09H186v7.76z"
+				  ></path>
+				</g>
+			  </svg>
+			</a>
+			<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+			  Consultancy studio based in Lisbon and main supporter of the
+			  project.
+			</p>
+			<a
+			  href="https://lisboncollective.com/"
+			  target="_blank"
+			  class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-purple-700 rounded-lg hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800"
+			>
+			  Website
+			  <svg
+				aria-hidden="true"
+				class="w-4 h-4 ml-2 -mr-1"
+				fill="currentColor"
+				viewBox="0 0 20 20"
+				xmlns="http://www.w3.org/2000/svg"
+			  >
+				<path
+				  fill-rule="evenodd"
+				  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+				  clip-rule="evenodd"
+				></path>
+			  </svg>
+			</a>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	<!-- End block -->
+	<footer class="bg-gray-50 dark:bg-gray-800">
+	  <div class="max-w-screen-xl p-4 py-6 mx-auto lg:py-16 md:p-8 lg:p-10">
+		<div class="grid grid-cols-1">
+		  <div class="mx-auto">
+			<h3
+			  class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+			>
+			  Help center
+			</h3>
+			<ul class="text-gray-500 dark:text-gray-400">
+			  <li class="mb-4">
+				<a
+				  href="https://med-mastodon.com/@gregoryMS#"
+				  class="hover:underline"
+				  >Mastodon Server</a
+				>
+			  </li>
+			  <li class="mb-4">
+				<a href="https://twitter.com/gregoryms_" class="hover:underline"
+				  >Twitter</a
+				>
+			  </li>
+			  <li>
+				<a
+				  href="https://github.com/brunoamaral/gregory/blob/main/LICENSE"
+				  class="hover"
+				  >CC0 License</a
+				>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+		<hr
+		  class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+		/>
+		<div class="text-center">
+		  <a
+			href="#"
+			class="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
+		  >
+			<img
+			  src="./images/logo.svg"
+			  class="h-6 mr-3 sm:h-9"
+			  alt="GregoryAI Logo"
+			/>
+			GregoryAI
+		  </a>
+		  <span
+			class="block text-sm text-center text-gray-500 dark:text-gray-400"
+			>Theme © 2021-2022 Landwind™. All Rights Reserved. Built with
+			<a
+			  href="https://flowbite.com"
+			  class="text-purple-600 hover:underline dark:text-purple-500"
+			  >Flowbite</a
+			>
+			and
+			<a
+			  href="https://tailwindcss.com"
+			  class="text-purple-600 hover:underline dark:text-purple-500"
+			  >Tailwind CSS</a
+			>.
+		  </span>
+		  <ul class="flex justify-center mt-5 space-x-5">
+			<li>
+			  <a
+				href="https://twitter.com/gregoryMS_"
+				class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+			  >
+				<svg
+				  class="w-5 h-5"
+				  fill="currentColor"
+				  viewBox="0 0 24 24"
+				  aria-hidden="true"
+				>
+				  <path
+					d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+				  />
+				</svg>
+			  </a>
+			</li>
+			<li>
+			  <a
+				href="https://github.com/brunoamaral/gregory"
+				class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
+			  >
+				<svg
+				  class="w-5 h-5"
+				  fill="currentColor"
+				  viewBox="0 0 24 24"
+				  aria-hidden="true"
+				>
+				  <path
+					fill-rule="evenodd"
+					d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+					clip-rule="evenodd"
+				  />
+				</svg>
+			  </a>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</footer>
+	<script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  </body>
 </html>
