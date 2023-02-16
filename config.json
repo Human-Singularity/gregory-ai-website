@@ -1,0 +1,14 @@
+{
+  "baseURL": "https://gregory-ai.com/",
+  "languageCode": "en-us",
+  "title": "GregoryAI — find and filter relevant scientific research",
+  "theme": "landwind",
+  "params":
+  {
+    "site_name": "GregoryAi",
+    "description": "Gregory is an Artificial Intelligence research assistant that constantly scouts trustworthy sources in any field, indexing and filtering the results into a searchable database.",
+    "ogimage": "images/Gregory_Banner3.jpg",
+    "ogcreator": "@BrunoAmaral",
+    "twittersite":"@gregoryMS_"
+  }
+}
