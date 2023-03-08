@@ -3,6 +3,10 @@
 	"languageCode": "en-us",
 	"title": "GregoryAI — find and filter relevant scientific research",
 	"theme": "landwind",
+	"disableKinds": [
+		"taxonomy",
+		"term"
+ ],
 	"params":
 	{
 		"site_name": "GregoryAi",
