@@ -141,12 +141,6 @@
 	{{ block "main" .}} {{ end }}
 	<script src="https://unpkg.com/flowbite@1.6.3/dist/flowbite.js"></script>
 	{{- if not .Site.IsServer -}}
-	<script
-	  async
-	  defer
-	  data-website-id="3101b029-19c8-42f8-aba2-b4268cf12aa4"
-	  src="https://nash.lisboncollective.com/umami.js"
-	></script>
-	{{end}}
+	<script async src="https://nash.lisboncollective.com/script.js" data-website-id="3101b029-19c8-42f8-aba2-b4268cf12aa4"></script>	{{end}}
   </body>
 </html>
